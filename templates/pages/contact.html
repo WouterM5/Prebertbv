@@ -1,0 +1,131 @@
+{% extends 'base_contact.html' %}
+{% load static %}
+
+{% block content %}
+
+<div data-w-id="8ef369ba-d87e-6a1f-bbc2-adde3986ef53" class="page-loader w-container"><img
+    src="{% static 'images/loader.gif' %}" loading="lazy" height="50" width="50" alt="" class="image"></div>
+
+<div class="section-6 wf-section">
+  <div class="contact-container w-container">
+    <div class="w-layout-grid contact-grid">
+      <div data-w-id="03c054b3-037d-8a96-678d-5e8a401b584f"
+        style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+        class="div-block-19">
+        <div class="contact-title">Contacteer<br> Ons</div>
+        <div class="contact-paragraph-div">
+          <div class="contact-paragraph-text-holder">
+            <p class="contact-paragraph">Prebert Adviesbureau bv geeft gespecialiseerd advies en bijstand aan
+              bedrijven, de overheid en aan particulieren op het gebied van veiligheid en welzijn.</p>
+          </div>
+        </div>
+        <div class="div-block-17">
+          <div class="w-layout-grid grid-column-icon card-form">
+            <a href="mailto:info²prebert.be" class="link-wrapper-color-primary w-inline-block"><img
+                src="{% static 'images/mail_svgrepo.com.svg' %}" loading="lazy" width="50" height="50" alt=""
+                class="link-icon-left">
+              <div class="text-block-icon"> info@prebert.be</div>
+            </a>
+            <a href="tel:0496/372480" class="link-wrapper-color-primary w-inline-block"><img
+                src="{% static 'images/phone_svgrepo.com.svg' %}" loading="lazy" height="50" width="50" alt=""
+                class="link-icon-left">
+              <div class="text-block-icon"> 0496/37.24.80</div>
+            </a>
+            <a href="https://www.google.com/maps/place/Zavelstraat+14,+2250+Olen/@51.1575938,4.9002583,17z/data=!3m1!4b1!4m6!3m5!1s0x47c14e777c466ff7:0xc3baa40bccfe3d53!8m2!3d51.1575938!4d4.902447!16s%2Fg%2F11lhz35zjc"
+              target="_blank" class="link-wrapper-color-primary w-inline-block"><img
+                src="{% static 'images/location-1_svgrepo.com.svg' %}" loading="lazy" height="50" width="50" alt=""
+                class="link-icon-left">
+              <div class="text-block-icon">Zavelstraat 14 <br>2250 Olen</div>
+            </a>
+            <a href="#" class="link-wrapper-color-primary w-inline-block"><img src="{% static 'images/verified.png' %}"
+                loading="lazy" height="50" width="50" alt="" class="link-icon-left">
+              <div class="text-block-icon">BE 0541.885.055</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="w-node-_03c054b3-037d-8a96-678d-5e8a401b586a-f73b3e02" data-w-id="03c054b3-037d-8a96-678d-5e8a401b586a"
+        style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+        class="div-block-18">
+        <div class="card-form w-form">
+
+
+
+          <form id="wf-form-BRIX---Contact-V7" name="wf-form-BRIX---Contact-V7" action="{% url 'inquiry' %}"
+            method="POST" enctype="multipart/form-data" class="form">
+            {% csrf_token %}
+
+            <div class="w-layout-grid form-grid-right">
+
+
+              <div>
+                <label for="BRIX-Contact-Name-V7" class="input-label">Naam</label><input type="text"
+                  class="input-contact w-input" maxlength="256" name="name"
+                   placeholder="Uw naam..." id="BRIX-Contact-Name-V7">
+              </div>
+
+
+              <div>
+                <label for="BRIX-Contact-Email-V7" class="input-label">Email</label><input type="email"
+                  class="input-contact w-input" maxlength="256" name="email"
+                   placeholder="...@email.com" id="BRIX-Contact-Email-V7">
+              </div>
+
+
+              <div>
+                <label for="BRIX-Contact-Phone-V7" class="input-label">Telefoon</label><input type="tel"
+                  class="input-contact w-input" maxlength="256" name="phone"
+                   placeholder="(123) 456 - 789" id="BRIX-Contact-Phone-V7">
+              </div>
+
+
+              <div>
+                <label for="BRIX-Contact-Company-V7" class="input-label">Bedrijf</label><input type="text"
+                  class="input-contact w-input" maxlength="256" name="company"
+                   placeholder="Bedrijf..." id="BRIX-Contact-Company-V7">
+              </div>
+
+
+              <div id="w-node-_03c054b3-037d-8a96-678d-5e8a401b587e-f73b3e02">
+                <label for="BRIX-Contact-Message-V7" class="input-label">Uw bericht</label><textarea
+                  id="BRIX-Contact-Message-V7" name="message" maxlength="5000"
+                   placeholder="Typ hier uw bericht..."
+                  class="brix---text-area w-input"></textarea>
+              </div>
+
+
+              <input type="submit" value="Verstuur" "
+                id="w-node-_03c054b3-037d-8a96-678d-5e8a401b5882-f73b3e02"
+                class="prebert-button navigation-link w-button">
+
+
+            </div>
+
+          </form>
+
+
+
+          <!-- <div class="success-message w-form-done">
+            <div><img
+                src="{% static 'images/interface-radio-button-checked-checkmark-done-to-do-radio-icon_svgrepo.com.svg' %}"
+                alt="" class="icon-success-message">
+              <h3 class="container-succes-holder">Dankjewel!</h3>
+              <div class="text-block-succes">Wij komen zo snel mogelijk bij u terug.</div>
+            </div>
+          </div>
+
+
+
+          <div class="error-message w-form-fail">
+            <div class="text-block-error">Er lijkt iets mis te zijn gegaan.<br>Probeer het later opnieuw.</div>
+          </div> -->
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
